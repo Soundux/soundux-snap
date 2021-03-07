@@ -4,7 +4,6 @@ summary: A free and open source cross-platform soundboard
 description: |
   Universal soundboard using pulseaudio modules
 
-grade: devel
 confinement: devmode
 base: core20
 
