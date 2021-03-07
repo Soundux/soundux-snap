@@ -43,8 +43,8 @@ upstream so Soundux can authoritatively publish future releases.
   - [x] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
   - [x] Update the description of the repository
   - [x] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [ ] Create a snap that runs in `devmode`
-  - [ ] Register the snap in the store, **using the preferred upstream name**
+  - [x] Create a snap that runs in `devmode`
+  - [x] Register the snap in the store, **using the preferred upstream name**
   - [ ] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`

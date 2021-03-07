@@ -4,7 +4,8 @@ summary: A free and open source cross-platform soundboard
 description: |
   Universal soundboard using pulseaudio modules
 
-confinement: strict
+grade: devel
+confinement: devmode
 base: core20
 
 parts:
@@ -16,14 +17,11 @@ parts:
       - libx11-dev
       - libxi-dev
       - libwebkit2gtk-4.0-dev
-    stage-snaps:
-      - pulseaudio/latest/stable
     stage-packages:
       - libwebkit2gtk-4.0-37
       - pulseaudio
       - pulseaudio-utils
       - libxi6
-      - libjsoncpp1
       - libx11-6
     plugin: cmake
     cmake-generator: Ninja
@@ -33,8 +31,7 @@ parts:
 
 apps:
   soundux:
-    command: bin/desktop-launch $SNAP/usr/local/bin/soundux
-    #command: usr/bin/gimp
+    command: usr/local/bin/soundux
     plugs:
       - x11
       - desktop
@@ -42,5 +39,4 @@ apps:
       - home
       - alsa
       - pulseaudio
-      - dbus
       - audio-playback
