@@ -41,7 +41,7 @@ upstream so Soundux can authoritatively publish future releases.
   - [x] Create a snap that runs in `devmode`
   - [x] Register the snap in the store, **using the preferred upstream name**
   - [x] Add a screenshot to this `README.md`
-  - [ ] Publish the `devmode` snap in the Snap store edge channel
+  - [x] Publish the `devmode` snap in the Snap store edge channel
   - [x] Add install instructions to this `README.md`
   - [x] Update snap store metadata, icons and screenshots
   - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
