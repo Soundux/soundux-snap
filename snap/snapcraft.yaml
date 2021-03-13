@@ -21,7 +21,7 @@ parts:
       - libwebkit2gtk-4.0-dev
     stage-packages:
       - libwebkit2gtk-4.0-37
-      - pulseaudio
+      - libpulse0
       - pulseaudio-utils
       - libxi6
       - libx11-6
