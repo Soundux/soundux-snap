@@ -6,6 +6,9 @@ description: |
 
 confinement: devmode
 base: core20
+architectures:
+  - build-on: amd64
+    run-on: amd64
 
 parts:
   soundux:
