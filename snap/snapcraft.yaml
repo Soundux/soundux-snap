@@ -30,10 +30,9 @@ parts:
     source-type: git
     source: https://github.com/Soundux/Soundux
 
-
 apps:
   soundux:
-    command: usr/local/bin/soundux
+    command: opt/soundux/soundux
     plugs:
       - x11
       - desktop
