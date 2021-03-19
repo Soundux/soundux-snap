@@ -43,12 +43,12 @@ apps:
   soundux:
     command: opt/soundux/soundux
     desktop: usr/share/applications/soundux.desktop
-    plugs:
-      - x11
-      - desktop
-      - desktop-legacy
-      - home
-      - alsa
-      - pulseaudio
-      - audio-playback
+    #plugs:
+    #  - x11
+    #  - desktop
+    #  - desktop-legacy
+    #  - home
+    #  - alsa
+    #  - pulseaudio
+    #  - audio-playback
     common-id: io.github.Soundux
