@@ -1,10 +1,10 @@
 name: soundux
-version: "0.2"
+version: "0.2.2b2"
 summary: A free and open source cross-platform soundboard
 description: |
   Universal soundboard using pulseaudio modules
 
-confinement: devmode
+confinement: classic
 base: core20
 architectures:
   - build-on: amd64
@@ -18,21 +18,31 @@ parts:
       - xorg-dev
       - libx11-dev
       - libxi-dev
+      - libwnck-3-dev
       - libwebkit2gtk-4.0-dev
     stage-packages:
       - libwebkit2gtk-4.0-37
       - libpulse0
       - pulseaudio-utils
       - libxi6
+      - libwnck-3-0
       - libx11-6
+    override-pull: |
+      snapcraftctl pull
+
+      # Point icon to the correct location
+      sed -i -e 's|Icon=soundux|Icon=/usr/share/pixmaps/soundux.png|g' deployment/soundux.desktop
     plugin: cmake
     cmake-generator: Ninja
     source-type: git
+    #source-tag: 0.2.2_b2
     source: https://github.com/Soundux/Soundux
+    parse-info: [usr/share/metainfo/io.github.Soundux.metainfo.xml]
 
 apps:
   soundux:
     command: opt/soundux/soundux
+    desktop: usr/share/applications/soundux.desktop
     plugs:
       - x11
       - desktop
@@ -41,3 +51,4 @@ apps:
       - alsa
       - pulseaudio
       - audio-playback
+    common-id: io.github.Soundux
