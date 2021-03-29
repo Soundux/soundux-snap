@@ -19,6 +19,7 @@ parts:
       - libx11-dev
       - libxi-dev
       - libwnck-3-dev
+      - libappindicator3-dev
       - libwebkit2gtk-4.0-dev
     stage-packages:
       - libwebkit2gtk-4.0-37
@@ -26,6 +27,7 @@ parts:
       - pulseaudio-utils
       - libxi6
       - libwnck-3-0
+      - libappindicator3-1
       - libx11-6
     override-pull: |
       snapcraftctl pull
