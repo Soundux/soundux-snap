@@ -1,5 +1,5 @@
 name: soundux
-version: "0.2.2b2"
+version: "0.2.2b3"
 summary: A free and open source cross-platform soundboard
 description: |
   Universal soundboard using pulseaudio modules
@@ -29,6 +29,8 @@ parts:
       - libwnck-3-0
       - libappindicator3-1
       - libx11-6
+      - ffmpeg
+      - youtube-dl
     override-pull: |
       snapcraftctl pull
 
