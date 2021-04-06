@@ -2,7 +2,7 @@ name: soundux
 version: "0.2.2b3"
 summary: A free and open source cross-platform soundboard
 description: |
-  Universal soundboard using pulseaudio modules
+  Universal soundboard using PulseAudio modules
 
 confinement: classic
 base: core20
@@ -39,7 +39,7 @@ parts:
     plugin: cmake
     cmake-generator: Ninja
     source-type: git
-    #source-tag: 0.2.2_b2
+    source-tag: 0.2.2_b3
     source: https://github.com/Soundux/Soundux
     parse-info: [usr/share/metainfo/io.github.Soundux.metainfo.xml]
 
