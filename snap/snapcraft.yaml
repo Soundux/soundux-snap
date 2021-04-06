@@ -21,6 +21,7 @@ parts:
       - libwnck-3-dev
       - libappindicator3-dev
       - libwebkit2gtk-4.0-dev
+      - libssl-dev
     stage-packages:
       - libwebkit2gtk-4.0-37
       - libpulse0
