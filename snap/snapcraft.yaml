@@ -30,6 +30,7 @@ parts:
       - libwnck-3-0
       - libappindicator3-1
       - libx11-6
+      - gvfs
       - ffmpeg
       - youtube-dl
     override-pull: |
@@ -48,6 +49,8 @@ apps:
   soundux:
     command: opt/soundux/soundux
     desktop: usr/share/applications/soundux.desktop
+    environment:
+      GIO_MODULE_DIR: /snap/core20/current/lib/x86_64-linux-gnu/gio/modules
     #plugs:
     #  - x11
     #  - desktop
