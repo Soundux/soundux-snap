@@ -1,5 +1,5 @@
 name: soundux
-version: "0.2.2b3"
+version: "0.2.4"
 summary: A free and open source cross-platform soundboard
 description: |
   Universal soundboard using PulseAudio modules
@@ -34,6 +34,8 @@ parts:
       - ffmpeg
       - youtube-dl
     override-pull: |
+      sudo add-apt-repository -y ppa:pipewire-debian/pipewire-upstream
+      sudo apt install -y libpipewire-0.3-dev
       snapcraftctl pull
 
       # Point icon to the correct location
@@ -41,7 +43,7 @@ parts:
     plugin: cmake
     cmake-generator: Ninja
     source-type: git
-    source-tag: 0.2.2_b3
+    source-tag: 0.2.4
     source: https://github.com/Soundux/Soundux
     parse-info: [usr/share/metainfo/io.github.Soundux.metainfo.xml]
 
