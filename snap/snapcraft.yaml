@@ -27,7 +27,6 @@ parts:
     stage-packages:
       - libwebkit2gtk-4.0-37
       - libpulse0
-      - pulseaudio-utils
       - libxi6
       - libwnck-3-0
       - libappindicator3-1
